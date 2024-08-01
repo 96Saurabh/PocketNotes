@@ -102,8 +102,8 @@ function NoteSection() {
                   </div>
                   <div className={styles.dateTime}>
                     <div className={styles.datesection}>
-                    <div className={styles.time}>{note.time}</div>
                     <div className={styles.date}>{note.date}</div>
+                    <div className={styles.time}>{note.time}</div>
                     </div>
                   </div>
                 </div>
