@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.hidden {
+  display: none;
+}
+
+.icon {
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  border-radius: 40px;
+  display: grid;
+  place-content: center;
+  font-size: 1rem;
+}
+
+.header {
+  color: #fff;
+  width: 100%;
+  height: 10vh;
+  background-color: #001f8b;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  gap: 1.25rem;
+}
+
+.header > div {
+  display: flex;
+  gap: 10px;
+}
+
+.icon + div {
+  align-self: center;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.content {
+  width: 100%;
+  height: 70vh;
+  overflow: auto;
+}
+
+.input {
+  width: 100%;
+  height: 20vh;
+  padding: 1rem 1.5rem;
+  background-color: #001f8b;
+}
+
+.input textarea {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  outline: none;
+  border: none;
+  padding: 1rem;
+  resize: none;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+textarea + div {
+  position: absolute;
+  right: 2rem;
+  bottom: 1.35rem;
+}
+
+.hidden {
+  display: none;
+}
+.note {
+  margin: 1rem;
+  width: 96%;
+  position: relative;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  margin-bottom: 1rem; /* Added margin to separate notes */
+  
+}
+
+.noteContent {
+  font-weight: 400;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+
+.datesection{
+ display: flex;
+ align-items: end;
+ right: 1rem;
+ bottom: 0rem;
+ position: absolute;
+ font-size: 1rem;
+ font-weight: bold;
+
+ 
+}
+.time{
+  min-width: 5rem;
+}
+.date{
+  min-width: 15rem;
+}
+
+
+@media (min-width: 768px) {
+  .notes {
+    font-size: 1rem;
+  }
+  .note {
+    padding: 1rem 2rem;
+    line-height: 1.5;
+  }
+  .dateTime {
+    width: 150px;
+    font-size: 1rem;
+  }
+}
